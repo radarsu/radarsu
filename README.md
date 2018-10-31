@@ -75,6 +75,8 @@ export class UserController {
 - <strong>templates</strong> - place for templates that you can modify accodring to your needs, used to auto-generate components. Powered by <a href="https://github.com/mde/ejs" target="_blank" alt="ejs template">ejs</a>.
 
 # Drawbacks
+You may ask - <strong>why I chose type-based structure</strong> instead of module-based? Because it simplifies imports and prevents circular dependencies. All helpers come before config and entities, all services come after entities, middleware comes before controller etc. This allows you to easiely understand the flow of application and makes ES6 import available from a single barrel.
+
 In order to provide you with a well-configured setup of various libraries perfectly working together <strong><a href="https://github.com/radarsu/radarsu" target="_blank" alt="radarsu framework">radarsu framework</a></strong> does not yet have adapters for other popular libraries. If you wish to switch from <a href="https://github.com/winstonjs/winston" target="_blank" alt="winston">Winston</a> to <a href="https://github.com/trentm/node-bunyan" target="_blank" alt="bunyan">Bunyan</a> or from Sequelize to other database, you need to rewrite initLogger, initDb, (...), methods.
 ```ts
 import {
