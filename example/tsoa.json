@@ -1,0 +1,30 @@
+{
+    "swagger": {
+        "outputDirectory": "./data/tsoa",
+        "entryFile": "./src/index.ts",
+        "host": "localhost:1337",
+        "basePath": "/v1",
+
+        "description": "Common parameter descriptions: <ul><li>[options: json](http://docs.sequelizejs.com/)</li></ul>",
+
+        "securityDefinitions": {
+            "jwt": {
+                "type": "apiKey",
+                "name": "x-access-token",
+                "in": "header",
+                "scopes": {
+                    "user": "user access"
+                }
+            }
+        },
+        "yaml": true
+    },
+    "routes": {
+        "basePath": "/v1",
+        "entryFile": "./src/index.ts",
+        "routesDir": "./data/tsoa/routes",
+        "middleware": "express",
+        "middlewareTemplate": "./templates/tsoa/custom-tsoa-template.handlebars",
+        "authenticationModule": "./src/6-middleware/example.guard.ts"
+    }
+}

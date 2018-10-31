@@ -1,0 +1,82 @@
+/* tslint:disable:no-implicit-dependencies no-string-literal object-literal-key-quotes quotemark */
+{{#if canImportByAlias}}
+  import { Controller, ValidateParam, FieldErrors, ValidateError, TsoaRoute } from 'tsoa';
+{{else}}
+  import { Controller, ValidateParam, FieldErrors, ValidateError, TsoaRoute } from '../../../src';
+{{/if}}
+{{#if iocModule}}
+import { iocContainer } from '{{iocModule}}';
+{{/if}}
+{{#each controllers}}
+import { {{name}} } from '{{modulePath}}';
+{{/each}}
+{{#if authenticationModule}}
+import { expressAuthentication } from '{{authenticationModule}}';
+{{/if}}
+import { routeHandle } from '.';
+
+const models: TsoaRoute.Models = {
+    {{#each models}}
+    '{{@key}}': {
+        {{#if enums}}
+        'enums': {{{json enums}}},
+        {{/if}}
+        {{#if properties}}
+        'properties': {
+            {{#each properties}}
+            '{{@key}}': {{{json this}}},
+            {{/each}}
+        },
+        {{/if}}
+        {{#if additionalProperties}}
+        'additionalProperties': {{{json additionalProperties}}},
+        {{/if}}
+    },
+    {{/each}}
+};
+
+export const RegisterRoutes = (app: any) => {
+    {{#if useSecurity}}
+    const authenticateMiddleware = (security: TsoaRoute.Security[] = []) => {
+        return (req: any, res: any, next: any) => {
+            let responded = 0;
+            let success = false;
+            for (const secMethod of security) {
+                expressAuthentication(req, secMethod.name, secMethod.scopes).then((user: any) => {
+                    // only need to respond once
+                    if (!success) {
+                        success = true;
+                        responded++;
+                        req['user'] = user;
+                        next();
+                    }
+                }).catch((error: any) => {
+                    responded++;
+                    if (responded === security.length && !success) {
+                        res.status(401);
+                        next(error);
+                    }
+                });
+            }
+        };
+    };
+    {{/if}}
+
+    {{#each controllers}}
+    {{#each actions}}
+        app.r0tenRequest('{{method}}', '{{../../basePath}}{{../path}}{{path}}',
+            {{#if security.length}}
+            authenticateMiddleware({{json security}}),
+            {{/if}}
+            (req: any, res: any, next: any) => {
+                const args = {
+                    {{#each parameters}}
+                        {{@key}}: {{{json this}}},
+                    {{/each}}
+                };
+                routeHandle(req, res, models, args, {{../name}}, '{{name}}', next);
+            },
+        );
+    {{/each}}
+    {{/each}}
+};

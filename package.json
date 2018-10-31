@@ -1,0 +1,37 @@
+{
+    "name": "radarsu",
+    "version": "1.0.0",
+    "description": "Combination of decent ready-to-go setup of express + ws + tsoa + sequelize (sequelize-typescript) + winston. Minimalistic architecture, auto-generated swagger api and integrated communication via websockets.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "cd example && nodemon"
+    },
+    "author": "Artur Kurowski",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server-express": "^2.1.0",
+        "express": "^4.16.4",
+        "express-graphql": "^0.7.1",
+        "graphql": "^14.0.2",
+        "lodash": "^4.17.11",
+        "mysql2": "^1.6.1",
+        "opn": "^5.4.0",
+        "reflect-metadata": "^0.1.12",
+        "sequelize": "^4.41.0",
+        "sequelize-typescript": "^0.6.6",
+        "subscriptions-transport-ws": "^0.9.15",
+        "tsoa": "^2.2.5",
+        "uuid": "^3.3.2",
+        "winston": "^3.1.0",
+        "ws": "^6.1.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.16.0",
+        "@types/express-graphql": "^0.6.2",
+        "@types/opn": "^5.1.0",
+        "@types/sequelize": "^4.27.29",
+        "@types/uuid": "^3.4.4",
+        "@types/ws": "^6.0.1"
+    }
+}
