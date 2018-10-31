@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/radarsu/radarsu/" target="blank"><img src="https://github.com/radarsu/radarsu-core/blob/master/logo.png" alt="radarsu logo" /></a><br/>
+    <a href="https://github.com/radarsu/radarsu/" target="blank"><img src="https://github.com/radarsu/radarsu/blob/master/assets/logo.png" alt="radarsu logo" /></a><br/>
     <strong>Simplicity is the ultimate sophistication.</strong>
 </p>
 
@@ -24,7 +24,7 @@ npm i radarsu-core
 - <strong>Automatic validation</strong> of incoming requests.
 - <strong>Pretty logging</strong> to console and files with a well-configured <a href="https://github.com/winstonjs/winston" target="_blank" alt="winston">Winston</a>.
 
-<img src="https://github.com/radarsu/radarsu-core/blob/master/logger.png" alt="radarsu logo" />
+<img src="https://github.com/radarsu/radarsu/blob/master/assets/logger.png" alt="radarsu logo" />
 
 - <strong>Auto-generated swagger</strong> docs and <strong>GraphQL panel</strong>.
 - <strong>Auto-generated CRUD client</strong> for all the models powered by <a href="https://github.com/angular/angular" taget="_blank" alt="angular 2 4 6">Angular</a> and <a href="https://github.com/primefaces/primeng" taget="_blank" alt="primefaces primeng">Primeng</a>.
