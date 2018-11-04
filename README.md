@@ -4,11 +4,18 @@
 </p>
 
 <p align="center">
-<a href="http://nodejs.org" target="blank">Node.js</a> server-side TypeScript framework with one thing in mind - <strong>removing code is easier than writing it</strong>.<br/>
-<strong>Auto-generated Swagger docs, REST, GraphQL, WebSockets and others</strong> - have it all, delete what you don't need.
+	<a href="http://nodejs.org" target="blank">Node.js</a> server-side TypeScript framework with one thing in mind - <strong>removing code is easier than writing it</strong>.<br/>
+	<strong>Auto-generated Swagger docs, REST, GraphQL, WebSockets and others</strong> - have it all, delete what you don't need.
 </p>
+
 <p align="center">
-<strong>Inspired by:</strong> <a href="https://github.com/nestjs/nest/" target="_blank" alt="sails.js">sails.js</a>, <a href="https://github.com/feathersjs/feathers" target="_blank" alt="feathers">feathers</a>, <a href="https://github.com/nestjs/nest/" target="_blank">nestjs</a>.
+	<strong>Inspired by:</strong> <a href="https://github.com/nestjs/nest/" target="_blank" alt="sails.js">sails.js</a>, <a href="https://github.com/feathersjs/feathers" target="_blank" alt="feathers">feathers</a>, <a href="https://github.com/nestjs/nest/" target="_blank">nestjs</a>.
+</p>
+
+<p align="center">
+	<img src="https://img.shields.io/github/license/radarsu/radarsu.svg" />
+	<img src="https://img.shields.io/github/stars/radarsu/radarsu.svg" />
+	<a href="https://twitter.com/radarsujs"><img src="https://img.shields.io/twitter/url/https/github.com/radarsu/radarsu.svg?style=social" /></a>
 </p>
 
 ## Description
