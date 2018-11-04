@@ -1,16 +1,21 @@
-<p align="center">Work in progress.</p>
-
 <p align="center">
-    <a href="https://github.com/radarsu/radarsu/" target="blank"><img src="https://github.com/radarsu/radarsu/blob/master/assets/logo.png" alt="radarsu logo" /></a><br/>
+    <a href="https://github.com/radarsu/radarsu/" target="blank"><img src="https://github.com/radarsu/radarsu-core/blob/master/logo.png" alt="radarsu logo" /></a><br/>
     <strong>Simplicity is the ultimate sophistication.</strong>
 </p>
 
 <p align="center">
-<a href="http://nodejs.org" target="blank">Node.js</a> server-side TypeScript framework with one thing in mind - <strong>removing code is easier than writing it</strong>.<br/>
-<strong>Auto-generated Swagger docs, REST, GraphQL, WebSockets and others</strong> - have it all, delete what you don't need.
+	<a href="http://nodejs.org" target="blank">Node.js</a> server-side TypeScript framework with one thing in mind - <strong>removing code is easier than writing it</strong>.<br/>
+	<strong>Auto-generated Swagger docs, REST, GraphQL, WebSockets and others</strong> - have it all, delete what you don't need.
 </p>
+
 <p align="center">
-<strong>Inspired by:</strong> <a href="https://github.com/nestjs/nest/" target="_blank" alt="sails.js">sails.js</a>, <a href="https://github.com/feathersjs/feathers" target="_blank" alt="feathers">feathers</a>, <a href="https://github.com/nestjs/nest/" target="_blank">nestjs</a>.
+	<strong>Inspired by:</strong> <a href="https://github.com/nestjs/nest/" target="_blank" alt="sails.js">sails.js</a>, <a href="https://github.com/feathersjs/feathers" target="_blank" alt="feathers">feathers</a>, <a href="https://github.com/nestjs/nest/" target="_blank">nestjs</a>.
+</p>
+
+<p align="center">
+	<img src="https://img.shields.io/github/license/radarsu/radarsu.svg" />
+	<img src="https://img.shields.io/github/stars/radarsu/radarsu.svg" />
+	<a href="https://twitter.com/radarsujs"><img src="https://img.shields.io/twitter/url/https/github.com/radarsu/radarsu.svg?style=social" /></a>
 </p>
 
 ## Description
@@ -26,7 +31,7 @@ npm i radarsu-core
 - <strong>Automatic validation</strong> of incoming requests.
 - <strong>Pretty logging</strong> to console and files with a well-configured <a href="https://github.com/winstonjs/winston" target="_blank" alt="winston">Winston</a>.
 
-<img src="https://github.com/radarsu/radarsu/blob/master/assets/logger.png" alt="radarsu logo" />
+<img src="https://github.com/radarsu/radarsu-core/blob/master/logger.png" alt="radarsu logo" />
 
 - <strong>Auto-generated swagger</strong> docs and <strong>GraphQL panel</strong>.
 - <strong>Auto-generated CRUD client</strong> for all the models powered by <a href="https://github.com/angular/angular" taget="_blank" alt="angular 2 4 6">Angular</a> and <a href="https://github.com/primefaces/primeng" taget="_blank" alt="primefaces primeng">Primeng</a>.
@@ -77,9 +82,7 @@ export class UserController {
 - <strong>templates</strong> - place for templates that you can modify accodring to your needs, used to auto-generate components. Powered by <a href="https://github.com/mde/ejs" target="_blank" alt="ejs template">ejs</a>.
 
 # Drawbacks
-<strong>Structure</strong> - <strong>type-based structure instead of module-based</strong>. It simplifies imports and prevents circular dependencies. Helpers come on the beggining, entities come before services, middleware comes before controllers etc. This allows to easiely understand the flow of application and makes ES6 import available from a single barrel `index.ts`. You can convert structure to module-based, although you will need to export everything in correct order from `import.ts` barrel. Good idea for bigger projects.
-
-<strong>Opinionated</strong> - in order to provide you with a well-configured setup of various libraries perfectly working together <strong><a href="https://github.com/radarsu/radarsu" target="_blank" alt="radarsu framework">radarsu framework</a></strong> does not yet have adapters for other popular libraries. If you wish to switch from <a href="https://github.com/winstonjs/winston" target="_blank" alt="winston">Winston</a> to <a href="https://github.com/trentm/node-bunyan" target="_blank" alt="bunyan">Bunyan</a> or from Sequelize to other database, you need to rewrite initLogger, initDb, (...), methods.
+In order to provide you with a well-configured setup of various libraries perfectly working together <strong><a href="https://github.com/radarsu/radarsu" target="_blank" alt="radarsu framework">radarsu framework</a></strong> does not yet have adapters for other popular libraries. If you wish to switch from <a href="https://github.com/winstonjs/winston" target="_blank" alt="winston">Winston</a> to <a href="https://github.com/trentm/node-bunyan" target="_blank" alt="bunyan">Bunyan</a> or from Sequelize to other database, you need to rewrite initLogger, initDb, (...), methods.
 ```ts
 import {
     Radarsu, config, radarsuLogger,
