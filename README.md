@@ -13,9 +13,10 @@
 </p>
 
 <p align="center">
-	<img src="https://img.shields.io/github/license/radarsu/radarsu.svg" />
-	<img src="https://img.shields.io/github/stars/radarsu/radarsu.svg" />
-	<a href="https://twitter.com/radarsujs"><img src="https://img.shields.io/twitter/url/https/github.com/radarsu/radarsu.svg?style=social" /></a>
+	<a href="https://www.npmjs.com/package/radarsu" target="_blank" alt="npm radarsu"><img src="https://img.shields.io/npm/v/:package.svg" alt="npm" /></a></p>
+	<img src="https://img.shields.io/github/license/radarsu/radarsu.svg" alt="license" />
+	<img src="https://img.shields.io/github/stars/radarsu/radarsu.svg" alt="stars" />
+	<a href="https://twitter.com/radarsujs" target="_blank" alt="radarsujs twitter"><img src="https://img.shields.io/twitter/url/https/github.com/radarsu/radarsu.svg?style=social" alt="social twitter" /></a>
 </p>
 
 ## Description
