@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-	<a href="https://www.npmjs.com/package/radarsu-core" target="_blank" alt="npm radarsu"><img src="https://img.shields.io/npm/v/radarsu-core.svg" alt="npm" /></a>
+	<a href="https://www.npmjs.com/package/radarsu" target="_blank" alt="npm radarsu"><img src="https://img.shields.io/npm/v/radarsu.svg" alt="npm" /></a>
 	<img src="https://img.shields.io/github/license/radarsu/radarsu.svg" alt="license" />
 	<img src="https://img.shields.io/github/stars/radarsu/radarsu.svg" alt="stars" />
 	<a href="https://twitter.com/radarsujs" target="_blank" alt="radarsujs twitter"><img src="https://img.shields.io/twitter/url/https/github.com/radarsu/radarsu.svg?style=social" alt="social twitter" /></a>
@@ -24,7 +24,7 @@ Have you tried <strong>meteor</strong>, <strong>loopback</strong>, <strong>sails
 
 ## Installation
 ```sh
-npm i radarsu-core
+npm i radarsu
 ```
 
 ## Features
@@ -32,7 +32,7 @@ npm i radarsu-core
 - <strong>Automatic validation</strong> of incoming requests.
 - <strong>Pretty logging</strong> to console and files with a well-configured <a href="https://github.com/winstonjs/winston" target="_blank" alt="winston">Winston</a>.
 
-<img src="https://github.com/radarsu/radarsu-core/blob/master/logger.png" alt="radarsu logo" />
+<img src="https://github.com/radarsu/radarsu/blob/master/logger.png" alt="radarsu logo" />
 
 - <strong>Auto-generated swagger</strong> docs and <strong>GraphQL panel</strong>.
 - <strong>Auto-generated CRUD client</strong> for all the models powered by <a href="https://github.com/angular/angular" taget="_blank" alt="angular 2 4 6">Angular</a> and <a href="https://github.com/primefaces/primeng" taget="_blank" alt="primefaces primeng">Primeng</a>.

@@ -1,6 +1,6 @@
 {
     "name": "radarsu",
-    "version": "1.0.12",
+    "version": "1.0.0",
     "description": "Combination of decent ready-to-go setup of express + ws + tsoa + sequelize (sequelize-typescript) + winston. Minimalistic architecture, auto-generated swagger api and integrated communication via websockets.",
     "main": "src/index.js",
     "scripts": {
