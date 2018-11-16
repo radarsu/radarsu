@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-	<strong>Inspired by:</strong> <a href="https://github.com/nestjs/nest/" target="_blank" alt="sails.js">sails.js</a>, <a href="https://github.com/feathersjs/feathers" target="_blank" alt="feathers">feathers</a>, <a href="https://github.com/nestjs/nest/" target="_blank">nestjs</a>.
+	<strong>Inspired by:</strong> <a href="https://github.com/nestjs/nest/" target="_blank" alt="sails.js">sails.js</a>, <a href="https://github.com/feathersjs/feathers" target="_blank" alt="feathers">feathers</a>.
 </p>
 
 <p align="center">
@@ -20,7 +20,11 @@
 </p>
 
 ## Description
-Have you tried <strong>meteor</strong>, <strong>loopback</strong>, <strong>sails.js</strong>, <strong>nestjs</strong> and nothing suits your needs? Lack of WebSocket integration? No auto-generated swagger docs or CRUD? Overcomplicated structure with many concepts you do not really want to implement? <strong>Simple solution comes here.</strong>
+When you choose your <storng>perfect stack</strong> quite often you realize that setting things up, well-configured and working takes a lot of time. Everything is far from perfect and you need to write tons of code to make all the awesome features work your way according to your needs.
+
+Maybe you have tried <strong>meteor</strong>, <strong>loopback</strong>, <strong>sails.js</strong> and nothing suits your needs. Lack of WebSocket integration? No auto-generated swagger docs, CRUD, issues with GraphQL subscriptions? Overcomplicated structure with many concepts you do not really want to implement? <strong>Simple solution comes here.</strong>
+
+Built on top of nestjs, flexible, ready-to-go.
 
 ## Installation
 ```sh
